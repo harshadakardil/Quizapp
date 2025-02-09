@@ -1,11 +1,10 @@
-{
-    "framework"; "nextjs",
-    "buildCommand"; "cd apps/frontend && npm install && npm run build",
-    "outputDirectory"; "apps/frontend/.next",
-    "rewrites"; [
-      {
-        "source": "/api/:path*",
-        "destination": "/api/:path*"
-      }
-    ]
-  }
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
