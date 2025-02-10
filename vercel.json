@@ -1,17 +1,15 @@
-{
+Copy{
+  "version": 2,
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "zeroConfig": true
-      }
+      "use": "@vercel/vite"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/"
     }
   ]
 }
